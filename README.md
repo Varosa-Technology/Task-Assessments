@@ -30,7 +30,7 @@ making it work is not enough.
 2. Naming classes, methods and variables properly will be checked.
 3. Simple code is better, still think how easy it will be to add things like update and
 delete clients later.
-4. The way you construct URLs will also be evaluated.
+4. The way you construct API ends points will also be evaluated.
 5. Your git commit history will tell a story of how you thought of the solution please
 be mindful of it. If you use Pull request to come to your solution it's even better.
 7. Tip: Commented code is bad, relevant comments about code will be necessary.
