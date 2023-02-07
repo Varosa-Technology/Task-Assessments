@@ -1,5 +1,5 @@
 # Software Engineer - GraphQL Task 
-Please attempt the following assessment and share your task repository by completing task submission through email - bin@varosatech.com, 
+Please attempt the following assessment and share your task repository by completing task submission through email - hr@varosatech.com, abin@varosatech.com, 
 kamal.aryal@varosatech.com, prithivi@varosatech.com. 
 
 The task is to build a part of the server(api) section of a system. It should be done in max 7
