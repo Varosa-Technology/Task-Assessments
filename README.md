@@ -22,7 +22,7 @@ Things to do
     8. Education background
     9. Preferred mode of contact (select one from email, phone, none)
 2. You can be creative with the fields.
-3. Add relevant validation to the form both backend
+3. Add relevant validation to the form
 
 ## Things to consider
 1. As the task is easy, we will look into the software design part of things, just
@@ -36,7 +36,6 @@ be mindful of it. If you use Pull request to come to your solution it's even bet
 7. Tip: Commented code is bad, relevant comments about code will be necessary.
 
 ## Rules/Requirements
-1. You must use Express.js framework with graphql.
 2. You must have a readme.md file in the root, well formatted in markdown (like the
 one you are reading now) that explains your solution.
 3. Use of any extra open-source library or package is allowed only via npm. You will
@@ -44,11 +43,10 @@ need to explain why you used it in the readme file.
 
 ## Bonus points
 1. Adding pagination will earn you some more points.
-2. Any relevant details in the readme.me file is a plus.
+2. You must use Express.js framework with graphql.
 3. Typescript will earn you some more points.
-4. Use of NOSQL(Mongodb) will earn you some more points.
 
 ## Task Submission
 
-Once completed, please share your task repository or details by completing task submission through email - abin@varosatech.com, 
+Once completed, please share your task repository or details by completing task submission through email - hr@varosatech.com, abin@varosatech.com, 
 kamal.aryal@varosatech.com, prithivi@varosatech.com
