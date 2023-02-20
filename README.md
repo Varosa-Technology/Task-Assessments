@@ -23,7 +23,7 @@ Things to do
     9. Preferred mode of contact (select one from email, phone, none)
 2. You can be creative with the fields.
 3. Add relevant validation to the form.
-4. Create a get request that return all the fields of form.
+4. Create a api that returns all the fields of form.
 
 ## Things to consider
 1. As the task is easy, we will look into the software design part of things, just
