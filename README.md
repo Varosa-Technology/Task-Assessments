@@ -1,4 +1,4 @@
-# Software Engineer - GraphQL Task 
+# Software Engineer - Node JavaScript Task 
 Please attempt the following assessment and share your task repository by completing task submission through email - hr@varosatech.com, abin@varosatech.com, 
 kamal.aryal@varosatech.com, prithivi@varosatech.com. 
 
@@ -22,7 +22,8 @@ Things to do
     8. Education background
     9. Preferred mode of contact (select one from email, phone, none)
 2. You can be creative with the fields.
-3. Add relevant validation to the form
+3. Add relevant validation to the form.
+4. Create a get request that return all the fields of form.
 
 ## Things to consider
 1. As the task is easy, we will look into the software design part of things, just
@@ -36,15 +37,17 @@ be mindful of it. If you use Pull request to come to your solution it's even bet
 7. Tip: Commented code is bad, relevant comments about code will be necessary.
 
 ## Rules/Requirements
-2. You must have a readme.md file in the root, well formatted in markdown (like the
+1. You must have a readme.md file in the root, well formatted in markdown (like the
 one you are reading now) that explains your solution.
-3. Use of any extra open-source library or package is allowed only via npm. You will
+2. Use of any extra open-source library or package is allowed only via npm. You will
 need to explain why you used it in the readme file.
 
 ## Bonus points
-1. Adding pagination will earn you some more points.
-2. You must use Express.js framework with graphql.
-3. Typescript will earn you some more points.
+1. Typescript will earn you some more points.
+2. Adding pagination will earn you some more points.
+3. Introducing graphql will earn you some more points.
+4. Adding validation will earn you some more points.
+
 
 ## Task Submission
 
