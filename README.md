@@ -47,6 +47,7 @@ need to explain why you used it in the readme file.
 2. Adding pagination will earn you some more points.
 3. Introducing graphql will earn you some more points.
 4. Adding validation will earn you some more points.
+5. In case of Rest API documentation is nice to have
 
 
 ## Task Submission
