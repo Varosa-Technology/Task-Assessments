@@ -1,56 +1,104 @@
-# Software Engineer - Node JavaScript Task 
-Please attempt the following assessment and share your task repository by completing task submission through email - hr@varosatech.com, abin@varosatech.com, 
-kamal.aryal@varosatech.com, prithivi@varosatech.com. 
 
-The task is to build a part of the server(api) section of a system. It should be done in max 7
-days after receiving it if not communicated otherwise.
+1. Introduction:
+   - This is a server side application that is capable of performing CRUD operations on User type using graphQL and mongodb.
 
-## Context
-This is a simple coding task not a coding challenge. This has only Create and Read of
-the small CRUD part for the client section of the application.
+2. Installation:
+   - Clone or fork this repository into your machine. 
+   - Install NodeJS in your system.
+   - npm install 
 
-## Task
-Things to do
-1. Create a form to get
-    1. Name
-    2. Gender
-    3. Phone
-    4. Email
-    5. Address
-    6. Nationality
-    7. Date of birth
-    8. Education background
-    9. Preferred mode of contact (select one from email, phone, none)
-2. You can be creative with the fields.
-3. Add relevant validation to the form.
-4. Create a api that returns all the fields of form.
+3. Connecting database:
+   - Copy and paste your mongodb database's connection string into env file.
+   - If you are connectiing to a cloud hosted database make sure you register your device's ip addres (You will see abutton called "Add Curent IP Address" inside connect prompt.)
 
-## Things to consider
-1. As the task is easy, we will look into the software design part of things, just
-making it work is not enough.
-2. Naming classes, methods and variables properly will be checked.
-3. Simple code is better, still think how easy it will be to add things like update and
-delete clients later.
-4. The way you construct API ends points will also be evaluated.
-5. Your git commit history will tell a story of how you thought of the solution please
-be mindful of it. If you use Pull request to come to your solution it's even better.
-7. Tip: Commented code is bad, relevant comments about code will be necessary.
+4. Run:
+   - npm run start:dev
 
-## Rules/Requirements
-1. You must have a readme.md file in the root, well formatted in markdown (like the
-one you are reading now) that explains your solution.
-2. Use of any extra open-source library or package is allowed only via npm. You will
-need to explain why you used it in the readme file.
+5. Features:
+   - Open graphql playground
+        -http://localhost:3000/graphql
+   - Save user data using mutaion.
+   - Retrive user data using query.
 
-## Bonus points
-1. Typescript will earn you some more points.
-2. Adding pagination will earn you some more points.
-3. Introducing graphql will earn you some more points.
-4. Adding validation will earn you some more points.
-5. In case of Rest API documentation is nice to have
+6. Exploring code base:
+   - If you see inside input-type folder, there is a file that defines the structure of data that we can give input to our mutation and this where the input validation is also carried out.
+   - If you see object-type folder, there is a file that defines the structue of data that we can output from our query.
+   - If you see inside database folder, there is file that defines the structue of our mongodb documents.
+   - If you see inside user.resolver.ts, there is methods decorated by mutation and query decorators. Those are the end points of our application.
+      - Mutation is responsible for handling incoming data.
+      - Query is responsible for serving requested data.
+
+   - Al the database operations are done inside user.service.ts.
+      - Mongoose modle is injected to access a document instance and perform database operations on it.
+
+7. GraphQL Play Ground:
 
 
-## Task Submission
+               mutation {
+               creatUser(
+                  createUser: {
+                     fullName: ""
+                     gender: ""
+                     phoneNumber: ""
+                     email: ""
+                     address: ""
+                     nationality: ""
+                     dateOfBirth: "2023-09-09T14:30:00.000+00:00"
+                     education: ""
+                     preferedModeOfContact: "
+                  }
+               ) {
+                  fullName
+                  dateOfBirth
+               }
+               }
 
-Once completed, please share your task repository or details by completing task submission through email - hr@varosatech.com, abin@varosatech.com, 
-kamal.aryal@varosatech.com, prithivi@varosatech.com
+               query {
+               getAllUsers {
+                  id
+                  fullName
+                  gender
+                  phoneNumber
+                  email
+                  address
+                  nationality
+                  dateOfBirth
+                  education
+                  preferedModeOfContact
+               }
+               }
+
+               query {
+               getUser(id: "") {
+                  id
+                  fullName
+                  gender
+               }
+               }
+
+               mutation {
+               updateUser(
+                  id: ""
+                  updateUser: {
+                     fullName: ""
+                     gender: ""
+                     phoneNumber: ""
+                     email: ""
+                     address: ""
+                     nationality: ""
+                     dateOfBirth: "2023-09-09T14:30:00.000+00:00"
+                     education: ""
+                     preferedModeOfContact: ""
+                  }
+               ) {
+                  id
+                  fullName
+               }
+               }
+
+               mutation {
+               deleteUser(id: "")
+               }
+
+   
+
